@@ -41,7 +41,7 @@ resource "aws_ecs_task_definition" "front_task" {
   container_definitions = jsonencode([
     {
       name      = "frontend"
-      image     = "342547628707.dkr.ecr.us-east-1.amazonaws.com/frontend"
+      image     = "342547628707.dkr.ecr.us-east-1.amazonaws.com/frontend:latest"
       cpu       = 256
       memory    = 512
       essential = true
